@@ -1,16 +1,12 @@
-export default function Toolbar({ filters, selected, onSelectFilter }) {
+export default function IconSwitch({ icon, onSwitch }) {
   return (
-    <div className="toolbar">
-      {
-        filters.map(filter => (
-          <button 
-            className={selected === filter ? 'button_pressed' : ''}
-            onClick={() => onSelectFilter(filter)}
-          >
-            {filter}
-          </button>
-        ))
-      }
+    <div className="icon-switch">
+      <span 
+        className="icon-switch-icon material-icons"
+        onClick={() => onSwitch()}
+      >
+        {icon}
+      </span>       
     </div>
   );
 }
