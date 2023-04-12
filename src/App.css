@@ -4,6 +4,15 @@ html {
   height: 100%;
   padding: 0;
   overflow-x:hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
 }
 
 .material-icons {
@@ -34,7 +43,7 @@ html {
 .container {
   display: block;
   height: 100vh;
-  width: 70vw;
+  width: 1200px;
   margin: auto;
 
   background: #fff;
@@ -49,18 +58,45 @@ html {
   cursor: pointer;
 }
 
-.projects {
+.cards-view {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
-  /* height: 100vmax; */
+  justify-content: space-between;
+  margin: 30px;
 }
 
-.project {
-  width: 30%;
-  margin: 5px;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  margin-bottom: 20px;
+
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-img {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin: 10px;
+
+  color: red;
+}
+
+.price {
+  margin-left: 30px;
+}
+
+button {
+  margin-right: 30px;
+  height: 30px;
+  width: 100px
+  ;
+  cursor: pointer;
+  color: red;
+  border: 1px solid red;
+  border-radius: 15px;
 }
