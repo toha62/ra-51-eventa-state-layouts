@@ -51,9 +51,8 @@ export default class Store extends React.Component {
             this.setState({icon: 'view_module'}) : this.setState({icon: 'view_list'})
           }
         />
-        <CardsView
-          cards={this.products}
-        />
+        {this.state.icon === 'view_module' ?
+          <CardsView cards={this.products} /> : <ListView items={this.products} />}        
       </div>
     );
   }

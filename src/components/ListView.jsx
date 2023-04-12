@@ -1,5 +1,9 @@
-export default function ListView() {
+import ShopItem from "./ShopItem";
+
+export default function ListView({ items }) {
   return (
-    <div className="list-view"></div>
+    <div className="list-view">
+      {items.map(item => (<ShopItem item={item}/>))}
+    </div>
   );
 }
